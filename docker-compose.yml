@@ -10,28 +10,28 @@
 #  $ docker-compose stop
 version: '3'
 networks:
-  database:
+  database2:
     driver: bridge
 
 services:
-  mongo:
+  mongo2:
     image: mongo:3.4
     networks:
-      - database
+      - database2
     # ports:
     # - 27017:27017 # Uncomment to expose mongo-port on host
     volumes:
       - ${BASE_DIR}/db:/data/db
-  webgme:
+  webgme2:
     build:
       context: .
       dockerfile: webgme.Dockerfile
     networks:
-      - database
+      - database2
     depends_on:
-      - mongo
+      - mongo2
     environment:
-      - MONGO_HOST=mongo
+      - MONGO_HOST=mongo2
     ports:
       - 8888:8888
     volumes:

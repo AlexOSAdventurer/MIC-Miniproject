@@ -1,4 +1,16 @@
 {
-  "components": {},
-  "dependencies": {}
+  "components": {
+    "visualizers": {
+      "PetriNetVisualizer": {
+        "src": "panels/PetriNetVisualizer/PetriNetVisualizerPanel",
+        "title": "PetriNetVisualizer",
+        "panel": "src/visualizers/panels/PetriNetVisualizer",
+        "secondary": false,
+        "widget": "src/visualizers/widgets/PetriNetVisualizer"
+      }
+    }
+  },
+  "dependencies": {
+    "visualizers": {}
+  }
 }
