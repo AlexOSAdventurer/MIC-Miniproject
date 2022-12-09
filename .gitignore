@@ -33,8 +33,5 @@ node_modules
 tmp/
 blob-local-storage/
 
-# The database files of the container
-db/
-
 # The package cache should never be uploaded
 package-lock.json
