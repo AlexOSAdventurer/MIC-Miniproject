@@ -9,6 +9,7 @@ They are used in a variety of analyses regarding distributed systems to model su
 - Chemical reactions
 - Biological systems
 - Computer and Cyber-Physical systems
+
 Transitions being able to fire at any time, combined with the token counter for each place, provides a minimum viable capacity for modeling the above systems.
 Examples of these are included within the 'seeds' folder and the default docker container database to help get you started.
 
