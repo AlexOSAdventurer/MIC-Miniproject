@@ -1,3 +1,12 @@
+#PetriNet Design Studio
+## PetriNet Overview
+PetriNets are a mathematical modeling language for describing distributed systems.
+It consists of a set of places that each contain a 'marking' or 'token' variable greater than or equal to 0.
+These are connected to a set of transitions, which are 'active' if all places that connect to it, treating it as a detination ('inplaces'), have one or more tokens.
+When an active transition is activated, it decrements all 'inplace' counts and icnrements all 'outplace' counts (places that are connected intuitively treating the transition as a source).
+##Applications of PetriNets
+
+
 # WDeStuP
 This repository is intended to server as a bootstrap for a fully docker based Design Studio development with WebGME.
 This way, the developer's computer can remain clean from installation (other than docker and required images) of any additional software.

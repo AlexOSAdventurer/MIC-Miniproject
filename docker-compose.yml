@@ -37,4 +37,5 @@ services:
     volumes:
       - ${BASE_DIR}/src:/usr/app/src
       - ${BASE_DIR}/test:/usr/app/test
+      - ${BASE_DIR}/db:/usr/app/db
   

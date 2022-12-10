@@ -1,8 +1,0 @@
-[
-  {
-    "id": "PetriNetVisualizer",
-    "title": "PetriNetVisualizer",
-    "panel": "panels/PetriNetVisualizer/PetriNetVisualizerPanel",
-    "DEBUG_ONLY": false
-  }
-]
