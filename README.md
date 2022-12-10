@@ -2,8 +2,8 @@
 ## PetriNet Overview
 PetriNets are a mathematical modeling language for describing distributed systems.
 It consists of a set of places that each contain a 'marking' or 'token' variable greater than or equal to 0.
-These are connected to a set of transitions, which are 'active' if all places that connect to it, treating it as a detination ('inplaces'), have one or more tokens.
-When an active transition is activated, it decrements all 'inplace' counts and icnrements all 'outplace' counts (places that are connected intuitively treating the transition as a source).
+These are connected to a set of transitions, which are 'active' if all places that connect to it, treating it as a destination ('inplaces'), have one or more tokens.
+When an active transition is activated, it decrements all 'inplace' counts and increments all 'outplace' counts (places that are connected intuitively treating the transition as a source).
 ## Applications of PetriNets
 They are used in a variety of analyses regarding distributed systems to model such systems in a roughly simplified fashion:
 - Chemical reactions
@@ -34,7 +34,7 @@ Keep in mind that there are two arc types: ArcToTransition, and ArcToPlace. Thes
 Under the marking attribute for places you can change the starting number for each place. This is visually annotated by suffixing all place names with the marking count, and by adding visual circles, each corresponding to a marking count, to the inside of the circle (up until 12, at which it defaults to a textual count).
 
 ## Studio Visualizer - Features and How to Use it
-You will see a new PetriNetVisualizer available as a potential visualizer for Petri networks. This lets you execute an interaction simmulation of the Petri network.
+You will see a new PetriNetVisualizer available as a potential visualizer for Petri networks. This lets you execute an interaction simulation of the Petri network.
 In this simulation, the following features are available to you:
 - Triggering an active transition by double clicking it. Transitions are marked active with the color green, inactive with the color red. All place counts and transition activeness should adjust automatically.
 - Resetting the simulation back to the starting place-marker state. You can do this with the rest simulation button in the toolbar that has the bottom-right pointing diagonal arrow icon.
