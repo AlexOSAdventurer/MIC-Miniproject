@@ -33,7 +33,7 @@ From there you can add places, transitions, and "arcs" (the connections between 
 Keep in mind that there are two arc types: ArcToTransition, and ArcToPlace. These respectively have source types of Place and Transition - Places and Transitions cannot connect to their own type. To create these connections, use the standard pointer creation controls.
 Under the marking attribute for places you can change the starting number for each place. This is visually annotated by suffixing all place names with the marking count, and by adding visual circles, each corresponding to a marking count, to the inside of the circle (up until 12, at which it defaults to a textual count).
 
-##Studio Visualizer - Features and How to Use it
+## Studio Visualizer - Features and How to Use it
 You will see a new PetriNetVisualizer available as a potential visualizer for Petri networks. This lets you execute an interaction simmulation of the Petri network.
 In this simulation, the following features are available to you:
 - Triggering an active transition by double clicking it. Transitions are marked active with the color green, inactive with the color red. All place counts and transition activeness should adjust automatically.
